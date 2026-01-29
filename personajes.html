@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes - Universo Fate</title>
+    <link rel="stylesheet" href="CSS/web.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Assets/fate33.webp" alt="Fate">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="web.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="serie.html">Serie</a></li>
+                <li><a href="universo.html">Universo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="personajes-section">
+            <h1>Personajes de Fate</h1>
+            <p style="text-align: center; margin-bottom: 30px;">
+                Conoce a los Servants y sus Masters, así como sus motivaciones en la Guerra del Santo Grial.
+            </p>
+
+            <div class="filters">
+                <button class="btn-filter active-btn" onclick="filterCards('all')">Todos</button>
+                <button class="btn-filter" onclick="filterCards('servant')">Servants</button>
+                <button class="btn-filter" onclick="filterCards('master')">Masters</button>
+            </div>
+
+            <div class="character-grid">
+                
+                <div class="servant">
+                    <h2>Saber</h2>
+                    <img src="Assets/saberg.webp" alt="Saber">
+                    <p><strong>Master:</strong> Kiritsugu Emiya</p>
+                    <p>Conocida como Artoria Pendragon. Lucha para reescribir el pasado y salvar su reino, Britania.</p>
+                </div>
+
+                <div class="master">
+                    <h2>Kiritsugu Emiya</h2>
+                    <img src="Assets/kiritsu emiya.webp" alt="Kiritsugu Emiya">
+                    <p><strong>Servant:</strong> Saber</p>
+                    <p>Un mago asesino que busca la paz mundial a cualquier costo, incluso sacrificando su humanidad.</p>
+                </div>
+
+                <div class="servant">
+                    <h2>Archer (Gilgamesh)</h2>
+                    <img src="Assets/archerg.webp" alt="Archer">
+                    <p><strong>Master:</strong> Tokiomi Tohsaka</p>
+                    <p>El Rey de los Héroes. Considera el Grial parte de su tesoro personal y lucha por puro entretenimiento.</p>
+                </div>
+
+                <div class="master">
+                    <h2>Tokiomi Tohsaka</h2>
+                    <img src="Assets/toshaka.webp" alt="Tokiomi Tohsaka">
+                    <p><strong>Servant:</strong> Archer</p>
+                    <p>Un mago aristócrata que valora la tradición, el honor y la elegancia por encima de todo.</p>
+                </div>
+
+                <div class="servant">
+                    <h2>Lancer</h2>
+                    <img src="Assets/lancer.webp" alt="Lancer">
+                    <p><strong>Master:</strong> Kayneth Archibald</p>
+                    <p>Diarmuid Ua Duibhne. Su único deseo es servir lealmente a su señor y recuperar su honor como caballero.</p>
+                </div>
+
+                <div class="master">
+                    <h2>Kayneth Archibald</h2>
+                    <img src="Assets/kayneth.webp" alt="Kayneth">
+                    <p><strong>Servant:</strong> Lancer</p>
+                    <p>Líder del departamento de invocación en la Torre del Reloj. Ambicioso, arrogante y extremadamente talentoso.</p>
+                </div>
+
+                <div class="servant">
+                    <h2>Rider (Iskandar)</h2>
+                    <img src="Assets/rider.webp" alt="Rider">
+                    <p><strong>Master:</strong> Waver Velvet</p>
+                    <p>Alejandro Magno. Su objetivo es encarnar de nuevo para conquistar el mundo moderno con sus propios pies.</p>
+                </div>
+
+                <div class="master">
+                    <h2>Waver Velvet</h2>
+                    <img src="Assets/wavervelvet.webp" alt="Waver Velvet">
+                    <p><strong>Servant:</strong> Rider</p>
+                    <p>Un joven aprendiz que participa en la guerra para demostrar su valor ante los que lo menospreciaron.</p>
+                </div>
+
+                <div class="servant">
+                    <h2>Caster</h2>
+                    <img src="Assets/caster.webp" alt="Caster">
+                    <p><strong>Master:</strong> Ryuunosuke Uryuu</p>
+                    <p>Gilles de Rais. Un maníaco que busca a Jeanne d'Arc y cree encontrarla en la figura de Saber.</p>
+                </div>
+
+                <div class="master">
+                    <h2>Ryuunosuke Uryuu</h2>
+                    <img src="Assets/ryuuunosuke.webp" alt="Ryuunosuke">
+                    <p><strong>Servant:</strong> Caster</p>
+                    <p>Un asesino en serie que no entiende nada de magia, solo busca nuevas formas de "arte" a través del caos.</p>
+                </div>
+
+                <div class="servant">
+                    <h2>Berserker</h2>
+                    <img src="Assets/berserker.webp" alt="Berserker">
+                    <p><strong>Master:</strong> Kariya Matou</p>
+                    <p>Lancelot du Lac. Consumido por la locura, busca a Saber para obtener castigo por sus pecados pasados.</p>
+                </div>
+
+                <div class="master">
+                    <h2>Kariya Matou</h2>
+                    <img src="Assets/kariya.webp" alt="Kariya">
+                    <p><strong>Servant:</strong> Berserker</p>
+                    <p>Un hombre que se somete a torturas de gusanos mágicos para intentar salvar a la pequeña Sakura.</p>
+                </div>
+
+                <div class="servant">
+                    <h2>Assassin</h2>
+                    <img src="Assets/assassin.webp" alt="Assassin">
+                    <p><strong>Master:</strong> Kirei Kotomine</p>
+                    <p>Los "Hassan-i Sabbah". Una red de espías con múltiples personalidades que actúan desde las sombras.</p>
+                </div>
+
+                <div class="master">
+                    <h2>Kirei Kotomine</h2>
+                    <img src="Assets/kirei.webp" alt="Kirei">
+                    <p><strong>Servant:</strong> Assassin</p>
+                    <p>Un sacerdote que carece de sentimientos normales y busca en la guerra una respuesta a su propia naturaleza vacía.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Universo Fate | Sección de Personajes</p>
+    </footer>
+
+    <script src="javascript/javacode.js"></script>
+</body>
+</html>

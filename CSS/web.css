@@ -1,0 +1,227 @@
+/* VARIABLES Y RESET */
+:root {
+    --oro: #f5c77a;
+    --azul-oscuro: #0b1c2d;
+    --azul-claro: #132f4c;
+    --blanco: #ffffff;
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    line-height: 1.6;
+}
+
+/* COMPONENTES GLOBALES */
+header {
+    background: var(--azul-claro);
+    padding: 20px 0;
+    border-bottom: 3px solid var(--oro);
+    text-align: center;
+}
+
+.logo img {
+    height: 70px;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 5px var(--oro));
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    color: var(--oro);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+nav a:hover,
+.active-nav {
+    color: var(--blanco);
+    text-shadow: 0 0 10px var(--oro);
+}
+
+footer {
+    background: var(--azul-claro);
+    padding: 30px;
+    text-align: center;
+    border-top: 3px solid var(--oro);
+    margin-top: 50px;
+}
+
+/* INICIO */
+#hero {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(
+            rgba(11, 28, 45, 0.7),
+            rgba(11, 28, 45, 0.7)
+        ),
+        url('../Assets/hero-bg.jpg') center / cover;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: var(--oro);
+    letter-spacing: 2px;
+}
+
+.btn-main {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 35px;
+    background: var(--oro);
+    color: var(--azul-oscuro);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px var(--oro);
+}
+
+#info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 50px 10%;
+}
+
+.card {
+    background: var(--azul-claro);
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid rgba(245, 199, 122, 0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: var(--oro);
+}
+
+/* PERSONAJES Y SERIES */
+.character-grid,
+.series-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.servant,
+.master,
+.serie {
+    background: var(--azul-claro);
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid rgba(245, 199, 122, 0.1);
+    transition: 0.4s;
+}
+
+.servant img,
+.master img,
+.serie img {
+    width: 100%;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: 2px solid var(--oro);
+}
+
+/* BUSCADOR Y FILTROS */
+#serieSearch,
+.filters {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#serieSearch {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    background: var(--azul-oscuro);
+    color: var(--blanco);
+    border-radius: 25px;
+    border: 2px solid var(--oro);
+}
+
+.btn-filter {
+    padding: 8px 20px;
+    margin: 5px;
+    background: transparent;
+    color: var(--oro);
+    border: 2px solid var(--oro);
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-filter:hover,
+.active-btn {
+    background: var(--oro);
+    color: var(--azul-oscuro);
+}
+
+/* TABLAS */
+.table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--azul-claro);
+}
+
+th {
+    padding: 15px;
+    background: var(--oro);
+    color: var(--azul-oscuro);
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gold-text {
+    color: var(--oro);
+}
+
+/* ANIMACIONES */
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.8s ease-out;
+}
+
+.show {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    visibility: visible !important;
+}
